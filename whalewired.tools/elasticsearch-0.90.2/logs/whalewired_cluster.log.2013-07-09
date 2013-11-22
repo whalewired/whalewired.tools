@@ -1,0 +1,309 @@
+[2013-07-09 10:49:57,043][INFO ][node                     ] [Aardwolf] {0.90.2}[4448]: initializing ...
+[2013-07-09 10:49:57,064][INFO ][plugins                  ] [Aardwolf] loaded [], sites [head]
+[2013-07-09 10:50:00,835][INFO ][node                     ] [Aardwolf] {0.90.2}[4448]: initialized
+[2013-07-09 10:50:00,835][INFO ][node                     ] [Aardwolf] {0.90.2}[4448]: starting ...
+[2013-07-09 10:50:01,477][INFO ][transport                ] [Aardwolf] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[CSCDNKAE694216/20.45.104.44:9300]}
+[2013-07-09 10:50:05,233][INFO ][cluster.service          ] [Aardwolf] new_master [Aardwolf][_rga_FdVQNyWFwcUeJFRsA][inet[CSCDNKAE694216/20.45.104.44:9300]], reason: zen-disco-join (elected_as_master)
+[2013-07-09 10:50:05,261][INFO ][discovery                ] [Aardwolf] whalewired_cluster/_rga_FdVQNyWFwcUeJFRsA
+[2013-07-09 10:50:06,076][INFO ][http                     ] [Aardwolf] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[CSCDNKAE694216/20.45.104.44:9200]}
+[2013-07-09 10:50:06,077][INFO ][node                     ] [Aardwolf] {0.90.2}[4448]: started
+[2013-07-09 10:50:06,449][INFO ][gateway                  ] [Aardwolf] recovered [1] indices into cluster_state
+[2013-07-09 10:50:51,417][INFO ][cluster.service          ] [Aardwolf] added {[Aardwolf][5CkEbNQMSkmmwHqHEFGo7A][inet[/20.45.104.44:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[Aardwolf][5CkEbNQMSkmmwHqHEFGo7A][inet[/20.45.104.44:9301]]{client=true, data=false}])
+[2013-07-09 10:55:23,651][DEBUG][action.admin.cluster.node.info] [Aardwolf] failed to execute on node [5CkEbNQMSkmmwHqHEFGo7A]
+org.elasticsearch.transport.RemoteTransportException: Failed to deserialize response of type [org.elasticsearch.action.admin.cluster.node.info.NodeInfo]
+Caused by: org.elasticsearch.transport.TransportSerializationException: Failed to deserialize response of type [org.elasticsearch.action.admin.cluster.node.info.NodeInfo]
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleResponse(MessageChannelHandler.java:147)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:124)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IndexOutOfBoundsException: Readable byte limit exceeded: 190
+	at org.elasticsearch.common.netty.buffer.AbstractChannelBuffer.readByte(AbstractChannelBuffer.java:236)
+	at org.elasticsearch.transport.netty.ChannelBufferStreamInput.readByte(ChannelBufferStreamInput.java:132)
+	at org.elasticsearch.common.io.stream.AdapterStreamInput.readByte(AdapterStreamInput.java:35)
+	at org.elasticsearch.common.io.stream.StreamInput.readBoolean(StreamInput.java:252)
+	at org.elasticsearch.action.admin.cluster.node.info.NodeInfo.readFrom(NodeInfo.java:231)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleResponse(MessageChannelHandler.java:145)
+	... 23 more
+[2013-07-09 10:55:39,400][INFO ][cluster.metadata         ] [Aardwolf] [dev.cpr.dk] deleting index
+[2013-07-09 10:55:40,985][DEBUG][action.admin.cluster.node.info] [Aardwolf] failed to execute on node [5CkEbNQMSkmmwHqHEFGo7A]
+org.elasticsearch.transport.RemoteTransportException: Failed to deserialize response of type [org.elasticsearch.action.admin.cluster.node.info.NodeInfo]
+Caused by: org.elasticsearch.transport.TransportSerializationException: Failed to deserialize response of type [org.elasticsearch.action.admin.cluster.node.info.NodeInfo]
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleResponse(MessageChannelHandler.java:147)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:124)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IndexOutOfBoundsException: Readable byte limit exceeded: 190
+	at org.elasticsearch.common.netty.buffer.AbstractChannelBuffer.readByte(AbstractChannelBuffer.java:236)
+	at org.elasticsearch.transport.netty.ChannelBufferStreamInput.readByte(ChannelBufferStreamInput.java:132)
+	at org.elasticsearch.common.io.stream.AdapterStreamInput.readByte(AdapterStreamInput.java:35)
+	at org.elasticsearch.common.io.stream.StreamInput.readBoolean(StreamInput.java:252)
+	at org.elasticsearch.action.admin.cluster.node.info.NodeInfo.readFrom(NodeInfo.java:231)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleResponse(MessageChannelHandler.java:145)
+	... 23 more
+[2013-07-09 10:55:53,438][INFO ][cluster.metadata         ] [Aardwolf] [dev.cpr.dk] creating index, cause [api], shards [5]/[1], mappings [logevent]
+[2013-07-09 10:55:56,850][DEBUG][action.admin.cluster.node.info] [Aardwolf] failed to execute on node [5CkEbNQMSkmmwHqHEFGo7A]
+org.elasticsearch.transport.RemoteTransportException: Failed to deserialize response of type [org.elasticsearch.action.admin.cluster.node.info.NodeInfo]
+Caused by: org.elasticsearch.transport.TransportSerializationException: Failed to deserialize response of type [org.elasticsearch.action.admin.cluster.node.info.NodeInfo]
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleResponse(MessageChannelHandler.java:147)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.messageReceived(MessageChannelHandler.java:124)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.elasticsearch.common.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.elasticsearch.common.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.elasticsearch.common.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IndexOutOfBoundsException: Readable byte limit exceeded: 190
+	at org.elasticsearch.common.netty.buffer.AbstractChannelBuffer.readByte(AbstractChannelBuffer.java:236)
+	at org.elasticsearch.transport.netty.ChannelBufferStreamInput.readByte(ChannelBufferStreamInput.java:132)
+	at org.elasticsearch.common.io.stream.AdapterStreamInput.readByte(AdapterStreamInput.java:35)
+	at org.elasticsearch.common.io.stream.StreamInput.readBoolean(StreamInput.java:252)
+	at org.elasticsearch.action.admin.cluster.node.info.NodeInfo.readFrom(NodeInfo.java:231)
+	at org.elasticsearch.transport.netty.MessageChannelHandler.handleResponse(MessageChannelHandler.java:145)
+	... 23 more
+[2013-07-09 10:56:01,559][INFO ][cluster.metadata         ] [Aardwolf] [dev.cpr.dk] update_mapping [logevent] (dynamic)
+[2013-07-09 10:59:52,108][DEBUG][action.index             ] [Aardwolf] [dev.cpr.dk][0], node[_rga_FdVQNyWFwcUeJFRsA], [P], s[STARTED]: Failed to execute [index {[dev.cpr.dk][logevent][P5nd2lbQT6-QxTowxYa6Cw], source[{"logThrowableTrace":"GSJAh ahsdg jas asd aweu qihqiwu hqiwudh qiuhd ahsdjak kajshdakjsdhasd ashdakdka  aksjdhkj ash dkajsd hkajshdkajhka askdh ka aksd aksj dhkajsdaks askjh fsdjfsldk fjslkefj qwlkas dasj as d", "contextName":"alpha","hostName":"localhost","logFileName":"WhaleWiredAppenderTest.java","logLineNumber":"86","logQualifiedClassName":"com.whalewired.client.log4j.WhaleWiredAppenderTest","logThread":"main","logTime":1271419888290,"systemName":"dev4.cpr.dk","loggerName":"com.whalewired","logLevel":"ERROR","logLocationShort":"WhaleWiredAppenderTest.java:86","logLocation":"com.whalewired.client.log4j.WhaleWiredAppenderTest.logWarn(WhaleWiredAppenderTest.java:86)","logMethodName":"logWarn","clientVersion":"1.2.1","logMessage":"This is the log message myfriend"}]}]
+org.elasticsearch.index.mapper.MapperParsingException: failed to parse [_ttl]
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:396)
+	at org.elasticsearch.index.mapper.internal.TTLFieldMapper.postParse(TTLFieldMapper.java:167)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:525)
+	at org.elasticsearch.index.mapper.DocumentMapper.parse(DocumentMapper.java:451)
+	at org.elasticsearch.index.shard.service.InternalIndexShard.prepareCreate(InternalIndexShard.java:306)
+	at org.elasticsearch.action.index.TransportIndexAction.shardOperationOnPrimary(TransportIndexAction.java:211)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction.performOnPrimary(TransportShardReplicationOperationAction.java:532)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$AsyncShardOperationAction$1.run(TransportShardReplicationOperationAction.java:430)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.elasticsearch.index.AlreadyExpiredException: already expired [dev.cpr.dk]/[logevent]/[P5nd2lbQT6-QxTowxYa6Cw] due to expire at [1286971888290] and was processed at [1373360392107]
+	at org.elasticsearch.index.mapper.internal.TTLFieldMapper.innerParseCreateField(TTLFieldMapper.java:205)
+	at org.elasticsearch.index.mapper.core.NumberFieldMapper.parseCreateField(NumberFieldMapper.java:167)
+	at org.elasticsearch.index.mapper.core.AbstractFieldMapper.parse(AbstractFieldMapper.java:385)
+	... 10 more
+[2013-07-09 11:30:00,403][INFO ][cluster.service          ] [Aardwolf] removed {[Aardwolf][5CkEbNQMSkmmwHqHEFGo7A][inet[/20.45.104.44:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Aardwolf][5CkEbNQMSkmmwHqHEFGo7A][inet[/20.45.104.44:9301]]{client=true, data=false}), reason transport disconnected (with verified connect)
+[2013-07-09 11:43:14,680][INFO ][cluster.service          ] [Aardwolf] added {[Aardwolf][yLv3EndnSp-bCU_JUwJOPw][inet[/20.45.104.44:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[Aardwolf][yLv3EndnSp-bCU_JUwJOPw][inet[/20.45.104.44:9301]]{client=true, data=false}])
+[2013-07-09 11:57:51,973][DEBUG][action.search.type       ] [Aardwolf] [dev.cpr.dk][1], node[_rga_FdVQNyWFwcUeJFRsA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1f54ce2a]
+org.elasticsearch.search.SearchParseException: [dev.cpr.dk][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query" : {
+        
+    },
+    "facets" : {
+        "context" : {
+            "terms" : {
+                "field" : "contextName",
+                "size" : 10
+            }
+        }
+    }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:573)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:141)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:206)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:193)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [dev.cpr.dk] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:184)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:273)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:251)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:561)
+	... 12 more
+[2013-07-09 11:57:51,979][DEBUG][action.search.type       ] [Aardwolf] [dev.cpr.dk][3], node[_rga_FdVQNyWFwcUeJFRsA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1f54ce2a]
+org.elasticsearch.search.SearchParseException: [dev.cpr.dk][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query" : {
+        
+    },
+    "facets" : {
+        "context" : {
+            "terms" : {
+                "field" : "contextName",
+                "size" : 10
+            }
+        }
+    }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:573)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:141)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:206)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:193)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [dev.cpr.dk] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:184)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:273)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:251)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:561)
+	... 12 more
+[2013-07-09 11:57:51,977][DEBUG][action.search.type       ] [Aardwolf] [dev.cpr.dk][2], node[_rga_FdVQNyWFwcUeJFRsA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1f54ce2a]
+org.elasticsearch.search.SearchParseException: [dev.cpr.dk][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query" : {
+        
+    },
+    "facets" : {
+        "context" : {
+            "terms" : {
+                "field" : "contextName",
+                "size" : 10
+            }
+        }
+    }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:573)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:141)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:206)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:193)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [dev.cpr.dk] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:184)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:273)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:251)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:561)
+	... 12 more
+[2013-07-09 11:57:51,973][DEBUG][action.search.type       ] [Aardwolf] [dev.cpr.dk][0], node[_rga_FdVQNyWFwcUeJFRsA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1f54ce2a]
+org.elasticsearch.search.SearchParseException: [dev.cpr.dk][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query" : {
+        
+    },
+    "facets" : {
+        "context" : {
+            "terms" : {
+                "field" : "contextName",
+                "size" : 10
+            }
+        }
+    }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:573)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:141)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:206)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:193)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [dev.cpr.dk] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:184)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:273)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:251)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:561)
+	... 12 more
+[2013-07-09 11:57:51,979][DEBUG][action.search.type       ] [Aardwolf] [dev.cpr.dk][4], node[_rga_FdVQNyWFwcUeJFRsA], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@1f54ce2a]
+org.elasticsearch.search.SearchParseException: [dev.cpr.dk][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{
+    "query" : {
+        
+    },
+    "facets" : {
+        "context" : {
+            "terms" : {
+                "field" : "contextName",
+                "size" : 10
+            }
+        }
+    }
+}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:573)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:484)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:469)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:462)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:234)
+	at org.elasticsearch.search.action.SearchServiceTransportAction.sendExecuteQuery(SearchServiceTransportAction.java:141)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction.sendExecuteFirstPhase(TransportSearchQueryThenFetchAction.java:80)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:206)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.performFirstPhase(TransportSearchTypeAction.java:193)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$2.run(TransportSearchTypeAction.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [dev.cpr.dk] [_na] query malformed, no field after start_object
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:184)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:273)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:251)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:561)
+	... 12 more

@@ -1,0 +1,478 @@
+[2013-09-06 16:11:48,953][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: initializing ...
+[2013-09-06 16:11:48,956][DEBUG][node                     ] [Aardwolf] using home [C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2], config [C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2\config], data [[C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2\data]], logs [C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2\logs], work [C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2\work], plugins [C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2\plugins]
+[2013-09-06 16:11:48,968][INFO ][plugins                  ] [Aardwolf] loaded [], sites [head]
+[2013-09-06 16:11:48,998][DEBUG][common.compress.lzf      ] using [UnsafeChunkDecoder] decoder
+[2013-09-06 16:11:49,022][DEBUG][env                      ] [Aardwolf] using node location [[C:\Dev\git\whalewired\whalewired.tools\elasticsearch-0.90.2\data\whalewired_cluster\nodes\0]], local_node_id [0]
+[2013-09-06 16:11:50,175][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [generic], type [cached], keep_alive [30s]
+[2013-09-06 16:11:50,184][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [index], type [fixed], size [4], queue_size [null], reject_policy [abort], queue_type [linked]
+[2013-09-06 16:11:50,184][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [bulk], type [fixed], size [4], queue_size [null], reject_policy [abort], queue_type [linked]
+[2013-09-06 16:11:50,185][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [get], type [fixed], size [4], queue_size [null], reject_policy [abort], queue_type [linked]
+[2013-09-06 16:11:50,188][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [search], type [fixed], size [12], queue_size [1k], reject_policy [abort], queue_type [linked]
+[2013-09-06 16:11:50,188][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [percolate], type [fixed], size [4], queue_size [null], reject_policy [abort], queue_type [linked]
+[2013-09-06 16:11:50,188][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+[2013-09-06 16:11:50,189][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [flush], type [scaling], min [1], size [2], keep_alive [5m]
+[2013-09-06 16:11:50,190][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [merge], type [scaling], min [1], size [2], keep_alive [5m]
+[2013-09-06 16:11:50,190][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [refresh], type [scaling], min [1], size [2], keep_alive [5m]
+[2013-09-06 16:11:50,190][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [warmer], type [scaling], min [1], size [2], keep_alive [5m]
+[2013-09-06 16:11:50,190][DEBUG][threadpool               ] [Aardwolf] creating thread_pool [snapshot], type [scaling], min [1], size [2], keep_alive [5m]
+[2013-09-06 16:11:50,211][DEBUG][transport.netty          ] [Aardwolf] using worker_count[8], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/6/1], receive_predictor[512kb->512kb]
+[2013-09-06 16:11:50,220][DEBUG][discovery.zen.ping.multicast] [Aardwolf] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+[2013-09-06 16:11:50,224][DEBUG][discovery.zen.ping.unicast] [Aardwolf] using initial hosts [], with concurrent_connects [10]
+[2013-09-06 16:11:50,226][DEBUG][discovery.zen            ] [Aardwolf] using ping.timeout [3s], master_election.filter_client [true], master_election.filter_data [false]
+[2013-09-06 16:11:50,227][DEBUG][discovery.zen.elect      ] [Aardwolf] using minimum_master_nodes [-1]
+[2013-09-06 16:11:50,228][DEBUG][discovery.zen.fd         ] [Aardwolf] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+[2013-09-06 16:11:50,233][DEBUG][discovery.zen.fd         ] [Aardwolf] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+[2013-09-06 16:11:50,271][DEBUG][monitor.jvm              ] [Aardwolf] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, ParNew=GcThreshold{name='ParNew', warnThreshold=1000, infoThreshold=700, debugThreshold=400}, ConcurrentMarkSweep=GcThreshold{name='ConcurrentMarkSweep', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}}]
+[2013-09-06 16:11:50,817][DEBUG][monitor.os               ] [Aardwolf] Using probe [org.elasticsearch.monitor.os.SigarOsProbe@50866ce2] with refresh_interval [1s]
+[2013-09-06 16:11:50,844][DEBUG][monitor.process          ] [Aardwolf] Using probe [org.elasticsearch.monitor.process.SigarProcessProbe@6d6071d0] with refresh_interval [1s]
+[2013-09-06 16:11:50,855][DEBUG][monitor.jvm              ] [Aardwolf] Using refresh_interval [1s]
+[2013-09-06 16:11:50,856][DEBUG][monitor.network          ] [Aardwolf] Using probe [org.elasticsearch.monitor.network.SigarNetworkProbe@2e6bc023] with refresh_interval [5s]
+[2013-09-06 16:11:51,277][DEBUG][monitor.network          ] [Aardwolf] net_info
+host [CSCDNKAE694216]
+lo	display_name [Software Loopback Interface 1]
+		address [/127.0.0.1] [/0:0:0:0:0:0:0:1] 
+		mtu [-1] multicast [true] ptp [false] loopback [true] up [true] virtual [false]
+net0	display_name [WAN Miniport (SSTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net1	display_name [WAN Miniport (L2TP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net2	display_name [WAN Miniport (PPTP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp0	display_name [WAN Miniport (PPPOE)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth0	display_name [WAN Miniport (IPv6)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth1	display_name [WAN Miniport (Network Monitor)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth2	display_name [WAN Miniport (IP)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+ppp1	display_name [RAS Async Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net3	display_name [WAN Miniport (IKEv2)]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth3	display_name [McAfee NDIS Intermediate Filter Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth4	display_name [McAfee NDIS Intermediate Filter Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth5	display_name [McAfee NDIS Intermediate Filter Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth6	display_name [Intel(R) 82579LM Gigabit Network Connection]
+		address [/20.45.104.86] 
+		mtu [1400] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth7	display_name [Intel(R) 82579LM Gigabit Network Connection - McAfee NDIS Intermediate Filter Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net4	display_name [Intel(R) Centrino(R) Advanced-N 6205]
+		address 
+		mtu [1400] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth8	display_name [Intel(R) Centrino(R) Advanced-N 6205 - McAfee NDIS Intermediate Filter Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth9	display_name [Nortel VPN Adapter]
+		address 
+		mtu [1400] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth10	display_name [Nortel VPN Adapter - McAfee NDIS Intermediate Filter Miniport]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net5	display_name [F5 Networks VPN Adapter]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net6	display_name [null]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net7	display_name [null]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net8	display_name [null]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net9	display_name [null]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth11	display_name [Juniper Network Connect Virtual Adapter]
+		address 
+		mtu [1400] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth12	display_name [Intel(R) 82579LM Gigabit Network Connection-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth13	display_name [Intel(R) 82579LM Gigabit Network Connection-WFP LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net10	display_name [Intel(R) Centrino(R) Advanced-N 6205-Virtual WiFi Filter Driver-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net11	display_name [Intel(R) Centrino(R) Advanced-N 6205-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth14	display_name [Nortel VPN Adapter-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth15	display_name [Nortel VPN Adapter-WFP LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth16	display_name [WAN Miniport (IPv6)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth17	display_name [WAN Miniport (IP)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+eth18	display_name [WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net12	display_name [Intel(R) Centrino(R) Advanced-N 6205-Native WiFi Filter Driver-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+net13	display_name [Intel(R) Centrino(R) Advanced-N 6205-WFP LightWeight Filter-0000]
+		address 
+		mtu [-1] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+
+[2013-09-06 16:11:52,327][DEBUG][monitor.fs               ] [Aardwolf] Using probe [org.elasticsearch.monitor.fs.SigarFsProbe@5c55d599] with refresh_interval [1s]
+[2013-09-06 16:11:52,654][DEBUG][indices.store            ] [Aardwolf] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+[2013-09-06 16:11:52,659][DEBUG][cache.memory             ] [Aardwolf] using bytebuffer cache with small_buffer_size [1kb], large_buffer_size [1mb], small_cache_size [10mb], large_cache_size [500mb], direct [true]
+[2013-09-06 16:11:52,666][DEBUG][script                   ] [Aardwolf] using script cache with max_size [500], expire [null]
+[2013-09-06 16:11:52,690][DEBUG][cluster.routing.allocation.decider] [Aardwolf] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+[2013-09-06 16:11:52,691][DEBUG][cluster.routing.allocation.decider] [Aardwolf] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+[2013-09-06 16:11:52,691][DEBUG][cluster.routing.allocation.decider] [Aardwolf] using [cluster_concurrent_rebalance] with [2]
+[2013-09-06 16:11:52,695][DEBUG][gateway.local            ] [Aardwolf] using initial_shards [quorum], list_timeout [30s]
+[2013-09-06 16:11:52,791][DEBUG][indices.recovery         ] [Aardwolf] using max_bytes_per_sec[20mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2013-09-06 16:11:52,831][DEBUG][http.netty               ] [Aardwolf] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb]
+[2013-09-06 16:11:52,838][DEBUG][indices.memory           ] [Aardwolf] using index_buffer_size [99mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [30m]
+[2013-09-06 16:11:52,840][DEBUG][indices.cache.filter     ] [Aardwolf] using [node] weighted filter cache with size [20%], actual_size [198.1mb], expire [null], clean_interval [1m]
+[2013-09-06 16:11:52,843][DEBUG][indices.fielddata.cache  ] [Aardwolf] using size [-1] [-1b], expire [null]
+[2013-09-06 16:11:52,856][DEBUG][gateway.local.state.meta ] [Aardwolf] using gateway.local.auto_import_dangled [YES], with gateway.local.dangling_timeout [2h]
+[2013-09-06 16:11:52,935][DEBUG][gateway.local.state.meta ] [Aardwolf] took 78ms to load state
+[2013-09-06 16:11:52,944][DEBUG][gateway.local.state.shards] [Aardwolf] took 8ms to load started shards state
+[2013-09-06 16:11:52,946][DEBUG][bulk.udp                 ] [Aardwolf] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+[2013-09-06 16:11:52,948][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: initialized
+[2013-09-06 16:11:52,948][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: starting ...
+[2013-09-06 16:11:52,990][DEBUG][netty.channel.socket.nio.SelectorUtil] Using select timeout of 500
+[2013-09-06 16:11:52,991][DEBUG][netty.channel.socket.nio.SelectorUtil] Epoll-bug workaround enabled = false
+[2013-09-06 16:11:53,062][DEBUG][transport.netty          ] [Aardwolf] Bound to address [/0:0:0:0:0:0:0:0:9300]
+[2013-09-06 16:11:53,579][INFO ][transport                ] [Aardwolf] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[CSCDNKAE694216/20.45.104.86:9300]}
+[2013-09-06 16:11:57,325][DEBUG][discovery.zen            ] [Aardwolf] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+[2013-09-06 16:11:57,328][DEBUG][cluster.service          ] [Aardwolf] processing [zen-disco-join (elected_as_master)]: execute
+[2013-09-06 16:11:57,329][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [1], source [zen-disco-join (elected_as_master)]
+[2013-09-06 16:11:57,330][INFO ][cluster.service          ] [Aardwolf] new_master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-06 16:11:57,354][DEBUG][transport.netty          ] [Aardwolf] connected to node [[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]]
+[2013-09-06 16:11:57,358][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:11:57,358][INFO ][discovery                ] [Aardwolf] whalewired_cluster/9lv_xH7gQRGZ1YVJ4vryQA
+[2013-09-06 16:11:57,358][DEBUG][cluster.service          ] [Aardwolf] processing [zen-disco-join (elected_as_master)]: done applying updated cluster_state
+[2013-09-06 16:11:57,358][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:11:57,373][DEBUG][cluster.service          ] [Aardwolf] processing [local-gateway-elected-state]: execute
+[2013-09-06 16:11:57,388][DEBUG][gateway.local            ] [Aardwolf] [dev.cpr.dk][2]: allocating [[dev.cpr.dk][2], node[null], [P], s[UNASSIGNED]] to [[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]] on primary allocation
+[2013-09-06 16:11:57,390][DEBUG][gateway.local            ] [Aardwolf] [dev.cpr.dk][0]: allocating [[dev.cpr.dk][0], node[null], [P], s[UNASSIGNED]] to [[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]] on primary allocation
+[2013-09-06 16:11:57,393][DEBUG][gateway.local            ] [Aardwolf] [dev.cpr.dk][3]: allocating [[dev.cpr.dk][3], node[null], [P], s[UNASSIGNED]] to [[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]] on primary allocation
+[2013-09-06 16:11:57,394][DEBUG][gateway.local            ] [Aardwolf] [dev.cpr.dk][4]: allocating [[dev.cpr.dk][4], node[null], [P], s[UNASSIGNED]] to [[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]] on primary allocation
+[2013-09-06 16:11:57,397][DEBUG][gateway.local            ] [Aardwolf] [dev.cpr.dk][1]: throttling allocation [[dev.cpr.dk][1], node[null], [P], s[UNASSIGNED]] to [[[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]]] on primary allocation
+[2013-09-06 16:11:57,407][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [2], source [local-gateway-elected-state]
+[2013-09-06 16:11:57,408][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:11:57,409][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:11:57,409][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk] creating index
+[2013-09-06 16:11:57,410][DEBUG][indices                  ] [Aardwolf] creating Index [dev.cpr.dk], shards [5]/[1]
+[2013-09-06 16:11:57,725][DEBUG][index.mapper             ] [Aardwolf] [dev.cpr.dk] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/C:/Dev/git/whalewired/whalewired.tools/elasticsearch-0.90.2/lib/elasticsearch-0.90.2.jar!/org/elasticsearch/index/mapper/default-mapping.json] and source[{
+    "_default_":{
+    }
+}]
+[2013-09-06 16:11:57,726][DEBUG][index.cache.query.parser.resident] [Aardwolf] [dev.cpr.dk] using [resident] query cache with max_size [100], expire [null]
+[2013-09-06 16:11:57,740][DEBUG][index.store.fs           ] [Aardwolf] [dev.cpr.dk] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2013-09-06 16:11:57,875][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk] adding mapping [logevent], source [{"logevent":{"_id":{"store":true,"index":"not_analyzed"},"_timestamp":{"enabled":true,"path":"logTime"},"_ttl":{"enabled":true,"default":15552000000},"properties":{"clientVersion":{"type":"string"},"contextName":{"type":"string","index":"not_analyzed","store":true,"omit_norms":true,"index_options":"docs"},"hostName":{"type":"string"},"logFileName":{"type":"string"},"logLevel":{"type":"string","index":"not_analyzed","store":true,"omit_norms":true,"index_options":"docs"},"logLineNumber":{"type":"string"},"logLocation":{"type":"string"},"logLocationShort":{"type":"string"},"logMessage":{"type":"multi_field","fields":{"logMessage":{"type":"string"},"untouched":{"type":"string","index":"not_analyzed","omit_norms":true,"index_options":"docs","include_in_all":false}}},"logMethodName":{"type":"string"},"logQualifiedClassName":{"type":"string"},"logThread":{"type":"string"},"logThrowableLocation":{"type":"string"},"logThrowableTrace":{"type":"string"},"logThrowableType":{"type":"string"},"logTime":{"type":"date","format":"dateOptionalTime"},"loggerName":{"type":"string"},"systemName":{"type":"string"},"transId":{"type":"string"},"uniqueId":{"type":"string"}}}}]
+[2013-09-06 16:11:57,980][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk][0] creating shard
+[2013-09-06 16:11:57,980][DEBUG][index.service            ] [Aardwolf] [dev.cpr.dk] creating shard_id [0]
+[2013-09-06 16:11:58,221][DEBUG][index.deletionpolicy     ] [Aardwolf] [dev.cpr.dk][0] Using [keep_only_last] deletion policy
+[2013-09-06 16:11:58,225][DEBUG][index.merge.policy       ] [Aardwolf] [dev.cpr.dk][0] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+[2013-09-06 16:11:58,226][DEBUG][index.merge.scheduler    ] [Aardwolf] [dev.cpr.dk][0] using [concurrent] merge scheduler with max_thread_count[2]
+[2013-09-06 16:11:58,232][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][0] state: [CREATED]
+[2013-09-06 16:11:58,233][DEBUG][index.translog           ] [Aardwolf] [dev.cpr.dk][0] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+[2013-09-06 16:11:58,240][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2013-09-06 16:11:58,242][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk][2] creating shard
+[2013-09-06 16:11:58,242][DEBUG][index.service            ] [Aardwolf] [dev.cpr.dk] creating shard_id [2]
+[2013-09-06 16:11:58,242][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][0] starting recovery from local ...
+[2013-09-06 16:11:58,313][DEBUG][index.deletionpolicy     ] [Aardwolf] [dev.cpr.dk][2] Using [keep_only_last] deletion policy
+[2013-09-06 16:11:58,313][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][0] starting engine
+[2013-09-06 16:11:58,314][DEBUG][index.merge.policy       ] [Aardwolf] [dev.cpr.dk][2] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+[2013-09-06 16:11:58,320][DEBUG][index.merge.scheduler    ] [Aardwolf] [dev.cpr.dk][2] using [concurrent] merge scheduler with max_thread_count[2]
+[2013-09-06 16:11:58,324][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][2] state: [CREATED]
+[2013-09-06 16:11:58,327][DEBUG][index.translog           ] [Aardwolf] [dev.cpr.dk][2] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+[2013-09-06 16:11:58,329][DEBUG][indices.memory           ] [Aardwolf] recalculating shard indexing buffer (reason=created_shard[dev.cpr.dk][2]), total is [99mb] with [1] active shards, each shard set to [99mb]
+[2013-09-06 16:11:58,692][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][0] updating index_buffer_size from [64mb] to [99mb]
+[2013-09-06 16:11:58,694][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][2] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2013-09-06 16:11:58,695][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk][3] creating shard
+[2013-09-06 16:11:58,696][DEBUG][index.service            ] [Aardwolf] [dev.cpr.dk] creating shard_id [3]
+[2013-09-06 16:11:58,695][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][2] starting recovery from local ...
+[2013-09-06 16:11:58,711][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][0] state: [RECOVERING]->[STARTED], reason [post recovery]
+[2013-09-06 16:11:58,715][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][0] scheduling refresher every 1s
+[2013-09-06 16:11:58,716][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][2] starting engine
+[2013-09-06 16:11:58,724][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][0] scheduling optimizer / merger every 1s
+[2013-09-06 16:11:58,725][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][0] recovery completed from local, took [483ms]
+    index    : files           [99] with total_size [993.2kb], took[47ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [99] with total_size [993.2kb]
+    start    : took [395ms], check_index [0s]
+    translog : number_of_operations [0], took [33ms]
+[2013-09-06 16:11:58,726][DEBUG][cluster.action.shard     ] [Aardwolf] sending shard started for [dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:58,727][DEBUG][cluster.action.shard     ] [Aardwolf] received shard started for [dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:58,802][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][2] state: [RECOVERING]->[STARTED], reason [post recovery]
+[2013-09-06 16:11:58,802][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][2] scheduling refresher every 1s
+[2013-09-06 16:11:58,803][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][2] scheduling optimizer / merger every 1s
+[2013-09-06 16:11:58,805][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][2] recovery completed from local, took [110ms]
+    index    : files           [27] with total_size [860kb], took[3ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [27] with total_size [860kb]
+    start    : took [82ms], check_index [0s]
+    translog : number_of_operations [0], took [9ms]
+[2013-09-06 16:11:58,806][DEBUG][cluster.action.shard     ] [Aardwolf] sending shard started for [dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:58,806][DEBUG][cluster.action.shard     ] [Aardwolf] received shard started for [dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:58,816][DEBUG][index.deletionpolicy     ] [Aardwolf] [dev.cpr.dk][3] Using [keep_only_last] deletion policy
+[2013-09-06 16:11:58,817][DEBUG][index.merge.policy       ] [Aardwolf] [dev.cpr.dk][3] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+[2013-09-06 16:11:58,818][DEBUG][index.merge.scheduler    ] [Aardwolf] [dev.cpr.dk][3] using [concurrent] merge scheduler with max_thread_count[2]
+[2013-09-06 16:11:58,819][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][3] state: [CREATED]
+[2013-09-06 16:11:58,820][DEBUG][index.translog           ] [Aardwolf] [dev.cpr.dk][3] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+[2013-09-06 16:11:58,821][DEBUG][indices.memory           ] [Aardwolf] recalculating shard indexing buffer (reason=created_shard[dev.cpr.dk][3]), total is [99mb] with [2] active shards, each shard set to [49.5mb]
+[2013-09-06 16:11:58,821][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][0] updating index_buffer_size from [99mb] to [49.5mb]
+[2013-09-06 16:11:58,823][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][2] updating index_buffer_size from [64mb] to [49.5mb]
+[2013-09-06 16:11:58,823][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][3] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2013-09-06 16:11:58,824][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk][4] creating shard
+[2013-09-06 16:11:58,825][DEBUG][index.service            ] [Aardwolf] [dev.cpr.dk] creating shard_id [4]
+[2013-09-06 16:11:58,824][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][3] starting recovery from local ...
+[2013-09-06 16:11:58,838][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][3] starting engine
+[2013-09-06 16:11:58,978][DEBUG][index.deletionpolicy     ] [Aardwolf] [dev.cpr.dk][4] Using [keep_only_last] deletion policy
+[2013-09-06 16:11:58,979][DEBUG][index.merge.policy       ] [Aardwolf] [dev.cpr.dk][4] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+[2013-09-06 16:11:58,981][DEBUG][index.merge.scheduler    ] [Aardwolf] [dev.cpr.dk][4] using [concurrent] merge scheduler with max_thread_count[2]
+[2013-09-06 16:11:58,982][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][4] state: [CREATED]
+[2013-09-06 16:11:58,983][DEBUG][index.translog           ] [Aardwolf] [dev.cpr.dk][4] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+[2013-09-06 16:11:58,984][DEBUG][indices.memory           ] [Aardwolf] recalculating shard indexing buffer (reason=created_shard[dev.cpr.dk][4]), total is [99mb] with [3] active shards, each shard set to [33mb]
+[2013-09-06 16:11:58,985][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][0] updating index_buffer_size from [49.5mb] to [33mb]
+[2013-09-06 16:11:58,986][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][2] updating index_buffer_size from [49.5mb] to [33mb]
+[2013-09-06 16:11:59,049][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][3] updating index_buffer_size from [64mb] to [33mb]
+[2013-09-06 16:11:59,049][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][4] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2013-09-06 16:11:59,053][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][4] starting recovery from local ...
+[2013-09-06 16:11:59,057][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][4] starting engine
+[2013-09-06 16:11:59,061][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][3] state: [RECOVERING]->[STARTED], reason [post recovery]
+[2013-09-06 16:11:59,061][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][3] scheduling refresher every 1s
+[2013-09-06 16:11:59,062][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][3] scheduling optimizer / merger every 1s
+[2013-09-06 16:11:59,063][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][3] recovery completed from local, took [239ms]
+    index    : files           [99] with total_size [959.4kb], took[11ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [99] with total_size [959.4kb]
+    start    : took [213ms], check_index [0s]
+    translog : number_of_operations [0], took [14ms]
+[2013-09-06 16:11:59,064][DEBUG][cluster.action.shard     ] [Aardwolf] sending shard started for [dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:59,065][DEBUG][cluster.action.shard     ] [Aardwolf] received shard started for [dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:59,064][INFO ][gateway                  ] [Aardwolf] recovered [1] indices into cluster_state
+[2013-09-06 16:11:59,066][DEBUG][cluster.service          ] [Aardwolf] processing [local-gateway-elected-state]: done applying updated cluster_state
+[2013-09-06 16:11:59,067][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,069][DEBUG][cluster.action.shard     ] [Aardwolf] applying started shards [[dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], [dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], [dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]], reason [after recovery from gateway]
+[2013-09-06 16:11:59,070][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [3], source [shard-started ([dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2013-09-06 16:11:59,072][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:11:59,072][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:11:59,088][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state
+[2013-09-06 16:11:59,089][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,089][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+[2013-09-06 16:11:59,094][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,094][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+[2013-09-06 16:11:59,095][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,096][DEBUG][gateway.local            ] [Aardwolf] [dev.cpr.dk][1]: allocating [[dev.cpr.dk][1], node[null], [P], s[UNASSIGNED]] to [[Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]]] on primary allocation
+[2013-09-06 16:11:59,098][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [4], source [reroute post shard-started ([dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2013-09-06 16:11:59,098][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:11:59,099][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:11:59,099][DEBUG][indices.cluster          ] [Aardwolf] [dev.cpr.dk][1] creating shard
+[2013-09-06 16:11:59,099][DEBUG][index.service            ] [Aardwolf] [dev.cpr.dk] creating shard_id [1]
+[2013-09-06 16:11:59,107][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][4] state: [RECOVERING]->[STARTED], reason [post recovery]
+[2013-09-06 16:11:59,107][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][4] scheduling refresher every 1s
+[2013-09-06 16:11:59,108][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][4] scheduling optimizer / merger every 1s
+[2013-09-06 16:11:59,108][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][4] recovery completed from local, took [55ms]
+    index    : files           [15] with total_size [915kb], took[2ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [15] with total_size [915kb]
+    start    : took [49ms], check_index [0s]
+    translog : number_of_operations [0], took [4ms]
+[2013-09-06 16:11:59,109][DEBUG][cluster.action.shard     ] [Aardwolf] sending shard started for [dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:59,110][DEBUG][cluster.action.shard     ] [Aardwolf] received shard started for [dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:59,146][INFO ][http                     ] [Aardwolf] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[CSCDNKAE694216/20.45.104.86:9200]}
+[2013-09-06 16:11:59,147][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: started
+[2013-09-06 16:11:59,193][DEBUG][index.deletionpolicy     ] [Aardwolf] [dev.cpr.dk][1] Using [keep_only_last] deletion policy
+[2013-09-06 16:11:59,194][DEBUG][index.merge.policy       ] [Aardwolf] [dev.cpr.dk][1] using [tiered] merge policy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0], async_merge[true]
+[2013-09-06 16:11:59,195][DEBUG][index.merge.scheduler    ] [Aardwolf] [dev.cpr.dk][1] using [concurrent] merge scheduler with max_thread_count[2]
+[2013-09-06 16:11:59,196][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][1] state: [CREATED]
+[2013-09-06 16:11:59,196][DEBUG][index.translog           ] [Aardwolf] [dev.cpr.dk][1] interval [5s], flush_threshold_ops [5000], flush_threshold_size [200mb], flush_threshold_period [30m]
+[2013-09-06 16:11:59,197][DEBUG][indices.memory           ] [Aardwolf] recalculating shard indexing buffer (reason=created_shard[dev.cpr.dk][1]), total is [99mb] with [4] active shards, each shard set to [24.7mb]
+[2013-09-06 16:11:59,198][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][0] updating index_buffer_size from [33mb] to [24.7mb]
+[2013-09-06 16:11:59,198][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][2] updating index_buffer_size from [33mb] to [24.7mb]
+[2013-09-06 16:11:59,199][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][3] updating index_buffer_size from [33mb] to [24.7mb]
+[2013-09-06 16:11:59,199][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][4] updating index_buffer_size from [64mb] to [24.7mb]
+[2013-09-06 16:11:59,199][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][1] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2013-09-06 16:11:59,200][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][1] starting recovery from local ...
+[2013-09-06 16:11:59,200][DEBUG][cluster.action.shard     ] [Aardwolf] sending shard started for [dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]] marked shard as initializing, but shard already started, mark shard as started]
+[2013-09-06 16:11:59,201][DEBUG][cluster.action.shard     ] [Aardwolf] received shard started for [dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]] marked shard as initializing, but shard already started, mark shard as started]
+[2013-09-06 16:11:59,203][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][0], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state
+[2013-09-06 16:11:59,203][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,204][DEBUG][cluster.action.shard     ] [Aardwolf] applying started shards [[dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], [dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]], reason [after recovery from gateway]
+[2013-09-06 16:11:59,205][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [5], source [shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2013-09-06 16:11:59,206][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:11:59,207][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:11:59,210][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state
+[2013-09-06 16:11:59,210][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]] marked shard as initializing, but shard already started, mark shard as started]]: execute
+[2013-09-06 16:11:59,211][DEBUG][index.engine.robin       ] [Aardwolf] [dev.cpr.dk][1] starting engine
+[2013-09-06 16:11:59,211][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]] marked shard as initializing, but shard already started, mark shard as started]]: no change in cluster_state
+[2013-09-06 16:11:59,213][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,214][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][2], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+[2013-09-06 16:11:59,215][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,215][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][3], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+[2013-09-06 16:11:59,216][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,216][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+[2013-09-06 16:11:59,217][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]] marked shard as initializing, but shard already started, mark shard as started]]: execute
+[2013-09-06 16:11:59,218][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][4], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [master [Aardwolf][9lv_xH7gQRGZ1YVJ4vryQA][inet[CSCDNKAE694216/20.45.104.86:9300]] marked shard as initializing, but shard already started, mark shard as started]]: no change in cluster_state
+[2013-09-06 16:11:59,315][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][1] state: [RECOVERING]->[STARTED], reason [post recovery]
+[2013-09-06 16:11:59,316][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][1] scheduling refresher every 1s
+[2013-09-06 16:11:59,316][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][1] scheduling optimizer / merger every 1s
+[2013-09-06 16:11:59,318][DEBUG][index.gateway            ] [Aardwolf] [dev.cpr.dk][1] recovery completed from local, took [117ms]
+    index    : files           [111] with total_size [988.9kb], took[9ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [111] with total_size [988.9kb]
+    start    : took [97ms], check_index [0s]
+    translog : number_of_operations [0], took [11ms]
+[2013-09-06 16:11:59,318][DEBUG][cluster.action.shard     ] [Aardwolf] sending shard started for [dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:59,319][DEBUG][cluster.action.shard     ] [Aardwolf] received shard started for [dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING], reason [after recovery from gateway]
+[2013-09-06 16:11:59,319][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,320][DEBUG][cluster.action.shard     ] [Aardwolf] applying started shards [[dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]], reason [after recovery from gateway]
+[2013-09-06 16:11:59,322][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [6], source [shard-started ([dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2013-09-06 16:11:59,323][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:11:59,323][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:11:59,327][DEBUG][cluster.service          ] [Aardwolf] processing [shard-started ([dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: done applying updated cluster_state
+[2013-09-06 16:11:59,327][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2013-09-06 16:11:59,329][DEBUG][cluster.service          ] [Aardwolf] processing [reroute post shard-started ([dev.cpr.dk][1], node[9lv_xH7gQRGZ1YVJ4vryQA], [P], s[INITIALIZING]), reason [after recovery from gateway]]: no change in cluster_state
+[2013-09-06 16:12:07,372][DEBUG][cluster.service          ] [Aardwolf] processing [routing-table-updater]: execute
+[2013-09-06 16:12:07,373][DEBUG][cluster.service          ] [Aardwolf] processing [routing-table-updater]: no change in cluster_state
+[2013-09-06 16:12:53,051][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:12:53,068][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:12:53,071][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:12:53,072][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:12:53,074][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:13:53,167][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:13:53,169][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:13:53,171][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:13:53,172][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:13:53,174][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:13:54,384][DEBUG][transport.netty          ] [Aardwolf] connected to node [[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}]
+[2013-09-06 16:13:57,624][DEBUG][cluster.service          ] [Aardwolf] processing [zen-disco-receive(join from node[[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}])]: execute
+[2013-09-06 16:13:57,626][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [7], source [zen-disco-receive(join from node[[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}])]
+[2013-09-06 16:13:57,627][INFO ][cluster.service          ] [Aardwolf] added {[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}])
+[2013-09-06 16:13:57,631][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:13:57,631][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:13:57,632][DEBUG][cluster.service          ] [Aardwolf] processing [zen-disco-receive(join from node[[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}])]: done applying updated cluster_state
+[2013-09-06 16:14:53,268][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:14:53,270][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:14:53,272][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:14:53,272][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:14:53,274][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:15:53,311][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:15:53,313][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:15:53,314][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:15:53,315][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:15:53,358][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:16:53,399][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:16:53,402][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:16:53,404][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:16:53,405][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:16:53,406][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:17:53,440][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:17:53,442][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:17:53,443][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:17:53,444][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:17:53,445][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:18:53,479][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:18:53,481][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:18:53,482][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:18:53,483][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:18:53,485][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:19:53,518][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:19:53,520][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:19:53,522][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:19:53,522][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:19:53,524][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:20:53,535][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:20:53,536][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:20:53,538][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:20:53,539][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:20:53,540][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:21:53,550][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:21:53,551][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:21:53,553][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:21:53,553][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:21:53,555][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:22:53,564][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:22:53,566][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:22:53,567][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:22:53,568][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:22:53,569][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:23:53,579][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:23:53,580][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:23:53,582][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:23:53,583][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:23:53,584][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:24:53,671][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:24:53,791][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:24:53,793][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:24:53,908][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:24:53,910][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:25:53,914][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:25:53,915][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:25:53,917][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:25:53,918][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:25:53,919][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:26:53,923][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:26:53,925][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:26:53,926][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:26:53,927][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:26:53,928][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:27:53,932][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:27:53,933][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:27:53,935][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:27:53,936][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:27:53,937][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:28:53,941][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:28:53,942][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:28:53,944][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:28:53,945][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:28:53,947][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:29:53,951][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:29:53,960][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:29:53,962][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:29:53,962][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:29:53,964][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:30:53,967][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][0] purging shard
+[2013-09-06 16:30:53,968][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][1] purging shard
+[2013-09-06 16:30:53,970][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][2] purging shard
+[2013-09-06 16:30:53,971][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][3] purging shard
+[2013-09-06 16:30:53,972][DEBUG][indices.ttl              ] [Aardwolf] [dev.cpr.dk][4] purging shard
+[2013-09-06 16:31:13,750][DEBUG][transport.netty          ] [Aardwolf] disconnected from [[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}], channel closed event
+[2013-09-06 16:31:14,763][DEBUG][cluster.service          ] [Aardwolf] processing [zen-disco-node_failed([Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}), reason transport disconnected (with verified connect)]: execute
+[2013-09-06 16:31:14,764][DEBUG][cluster.service          ] [Aardwolf] cluster state updated, version [8], source [zen-disco-node_failed([Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}), reason transport disconnected (with verified connect)]
+[2013-09-06 16:31:14,764][INFO ][cluster.service          ] [Aardwolf] removed {[Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false},}, reason: zen-disco-node_failed([Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}), reason transport disconnected (with verified connect)
+[2013-09-06 16:31:14,765][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: execute
+[2013-09-06 16:31:14,766][DEBUG][river.cluster            ] [Aardwolf] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2013-09-06 16:31:14,768][DEBUG][cluster.service          ] [Aardwolf] processing [zen-disco-node_failed([Aardwolf][c7ZGdNCFTDKaIcNl5eNX3A][inet[/20.45.104.86:9301]]{client=true, data=false}), reason transport disconnected (with verified connect)]: done applying updated cluster_state
+[2013-09-06 16:31:14,768][DEBUG][cluster.service          ] [Aardwolf] processing [routing-table-updater]: execute
+[2013-09-06 16:31:14,770][DEBUG][cluster.service          ] [Aardwolf] processing [routing-table-updater]: no change in cluster_state
+[2013-09-06 16:31:15,045][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: stopping ...
+[2013-09-06 16:31:15,053][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][0] state: [STARTED]->[CLOSED], reason [shutdown]
+[2013-09-06 16:31:15,069][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][4] state: [STARTED]->[CLOSED], reason [shutdown]
+[2013-09-06 16:31:15,075][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][3] state: [STARTED]->[CLOSED], reason [shutdown]
+[2013-09-06 16:31:15,086][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][2] state: [STARTED]->[CLOSED], reason [shutdown]
+[2013-09-06 16:31:15,092][DEBUG][index.shard.service      ] [Aardwolf] [dev.cpr.dk][1] state: [STARTED]->[CLOSED], reason [shutdown]
+[2013-09-06 16:31:15,103][DEBUG][index.cache.filter.weighted] [Aardwolf] [dev.cpr.dk] full cache clear, reason [close]
+[2013-09-06 16:31:15,765][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: stopped
+[2013-09-06 16:31:15,766][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: closing ...
+[2013-09-06 16:31:15,778][INFO ][node                     ] [Aardwolf] {0.90.2}[6516]: closed
